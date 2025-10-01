@@ -1,17 +1,16 @@
 variable "region" {
-    description = "The AWS region to deploy resources in."
-    type        = string
-    default     = "us-east-1"  
+  description = "The AWS region to deploy resources in."
+  type        = string
+  default     = "us-east-1"
+}
+variable "public_subnet_az" {
+  description = "Availability Zone for the public subnet."
+  type        = string
+  default     = "us-east-1a"
 }
 
-variable "access_key" {
-    description = "The AWS access key."
-    type        = string    
-    default     = "my-access-key"
-  
-}
-variable "secret_key" {
-    description = "The AWS secret key."
-    type        = string    
-    default     = "my-access-key"
+variable "private_subnet_az" {
+  description = "Availability Zone for the private subnet."
+  type        = string
+  default     = "us-east-1b"
 }
